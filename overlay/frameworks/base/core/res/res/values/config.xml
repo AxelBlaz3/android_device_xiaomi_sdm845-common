@@ -365,8 +365,7 @@
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
 
-    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-         in hardware. -->
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
 
     <!-- True if the device supports Sustained Performance Mode-->
@@ -374,4 +373,9 @@
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Smart charge sysfs node and value for suspend/resume charging -->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
 </resources>
